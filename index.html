@@ -4,26 +4,96 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>BC Harmonie — En construction</title>
+  <meta name="robots" content="noindex,nofollow" />
+
   <style>
-    body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
-           font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
-    .wrap { text-align:center; padding:32px; }
-    img { max-width: 420px; width: 80vw; height:auto; }
-    .tag { margin-top:18px; font-size:18px; letter-spacing:.06em; text-transform:uppercase; opacity:.75; }
-    .formwrap { margin-top: 22px; }
-.formwrap iframe { width: min(720px, 92vw); height: 720px; border: 0; }
+    :root{
+      --graphite:#242421;
+      --offwhite:#ede9e1;
+      --bronze:#8a6a3e; /* sous le coude */
+      --muted: rgba(237,233,225,.72);
+      --border: rgba(237,233,225,.25);
+    }
+
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background: var(--graphite);
+      color: var(--offwhite);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+
+    .wrap{
+      width:min(820px, 92vw);
+      text-align:center;
+      padding: 28px 18px 34px;
+    }
+
+    .logo{
+      width: min(560px, 86vw);
+      height:auto;
+      display:block;
+      margin: 0 auto 18px;
+    }
+
+    .tag{
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+
+    .actions{
+      margin-top: 24px;
+      display:flex;
+      gap:12px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+
+    a.btn{
+      display:inline-block;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: transparent;
+      color: var(--offwhite);
+      text-decoration:none;
+      font-weight: 650;
+      border: 1px solid var(--border);
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+    a.btn:hover{
+      border-color: rgba(237,233,225,.55);
+    }
+
+    .fine{
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
   </style>
 </head>
+
 <body>
-  <div class="wrap">
-    <img src="logo.png" alt="BC Harmonie">
+  <main class="wrap">
+    <img class="logo" src="logo.png" alt="BC Harmonie">
+
     <div class="tag">Site en construction</div>
-   <div class="contact">
-  <a href="mailto:contact@bc-harmonie.fr">contact@bc-harmonie.fr</a>
-</div>
-<a class="btn" href="/contact.html">Contact</a>
-    <div class="formwrap">
-</div>
-  </div>
+
+    <div class="actions">
+      <a class="btn" href="/contact.html">Contact</a>
+    </div>
+
+    <div class="fine">
+      Agencement sur mesure — Réponse rapide
+    </div>
+  </main>
 </body>
 </html>
