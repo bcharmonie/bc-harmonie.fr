@@ -15,23 +15,21 @@
       --border: rgba(237,233,225,.25);
     }
 
-    body{
-      border-top: 2px solid var(--bronze);
-      margin:0;
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      background: var(--graphite);
-      color: var(--offwhite);
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    }
+  body{
+  margin:0;
+  min-height:100svh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: var(--graphite);
+  color: var(--offwhite);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
 
-    .wrap{
-      width:min(820px, 92vw);
-      text-align:center;
-      padding: 28px 18px 34px;
-    }
+@media (max-width: 640px){
+  body{ align-items:flex-start; }
+  .wrap{ padding-top: calc(44px + env(safe-area-inset-top)); }
+}
 
 .logo{
   width: min(440px, 82vw);
